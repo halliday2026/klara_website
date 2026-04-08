@@ -92,6 +92,6 @@ export default defineConfig({
 ```
 
 ## Content Notes
-- Testimonials are **placeholders** — marked with italic note. Will be replaced with real quotes later.
+- Testimonials are real client quotes from Jennifer Tinajero (Keck Medicine USC) and Justin Lischak Early (First American).
 - Copy is finalized and approved by client. Do not rewrite.
 - Images are provided as JPGs in `public/images/`.
