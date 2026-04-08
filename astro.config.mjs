@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://klarityinternational.com',
+  site: 'https://halliday2026.github.io',
+  base: '/klara_website',
   output: 'static',
 });
