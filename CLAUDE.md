@@ -83,13 +83,16 @@ LinkedIn: https://www.linkedin.com/in/klarafarkas
 - `npm run preview` — preview production build locally
 
 ## Deployment
-GitHub Pages. The `astro.config.mjs` should set:
+GitHub Pages with custom domain. `astro.config.mjs`:
 ```js
 export default defineConfig({
   site: 'https://klarityinternational.com',
   output: 'static',
+  // Add base: '/klara_website/' if deploying to the github.io subdomain instead of custom domain
 });
 ```
+
+All image `src` attributes use `import.meta.env.BASE_URL` prefix (e.g. `src={`${import.meta.env.BASE_URL}images/klara-hero.jpg`}`). This means only `astro.config.mjs` needs to change when switching between custom domain and github.io URL — the components themselves never need to change.
 
 ## Content Notes
 - Testimonials are real client quotes from Jennifer Tinajero (Keck Medicine USC) and Justin Lischak Early (First American).
