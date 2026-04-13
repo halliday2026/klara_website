@@ -9,7 +9,7 @@ Single-page marketing site for **Klarity International**, an executive communica
 - **JavaScript**: Vanilla JS only — no React, Vue, or other UI frameworks
 - **Fonts**: Google Fonts — Cormorant Garamond (display) + Outfit (body)
 - **Deployment**: GitHub Pages via `astro build` → static output
-- **Images**: Optimized via Astro's built-in `<Image />` component where possible
+- **Images**: Plain `<img>` tags with `import.meta.env.BASE_URL` prefix for deployment portability
 
 ## Project Structure
 ```
@@ -24,7 +24,7 @@ src/
     WhoIWorkWith.astro    # 4-item checklist grid
     Process.astro         # Dark section, 3-step Clarify/Communicate/Align
     Services.astro        # 3 service cards
-    Testimonials.astro    # 2x2 quote cards (placeholders for now)
+    Testimonials.astro    # 2 real client quote cards
     About.astro           # Photo + bio side-by-side
     Clients.astro         # "Trusted by" logo strip (text-based)
     FinalCTA.astro        # Dark CTA section
